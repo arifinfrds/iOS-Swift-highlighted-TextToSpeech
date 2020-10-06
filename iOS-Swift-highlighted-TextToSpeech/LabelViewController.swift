@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LabelViewController.swift
 //  iOS-Swift-highlighted-TextToSpeech
 //
 //  Created by Arifin Firdaus on 06/10/20.
@@ -9,39 +9,35 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
-    @IBOutlet weak var textView: UITextView!
+class LabelViewController: UIViewController, AVSpeechSynthesizerDelegate {
+    @IBOutlet weak var label: UILabel!
     let synthesizer = AVSpeechSynthesizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
     }
-
-    @IBAction func speakButtonDidTapped(_ sender: UIBarButtonItem) {
-        let string = textView.text!
+    
+    @IBAction func speak(_ sender: AnyObject) {
+        let string = label.text!
         let utterance = AVSpeechUtterance(string: string)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-
+        
         synthesizer.delegate = self
         synthesizer.speak(utterance)
     }
     
-}
-
-
-// MARK: - AVSpeechSynthesizerDelegate
-
-extension ViewController: AVSpeechSynthesizerDelegate {
-    
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
+        print("speaking")
         let mutableAttributedString = NSMutableAttributedString(string: utterance.speechString)
-        mutableAttributedString.addAttribute(.backgroundColor, value: UIColor.systemBlue, range: characterRange)
-        textView.attributedText = mutableAttributedString
-        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        mutableAttributedString.addAttribute(.foregroundColor, value: UIColor.red, range: characterRange)
+        label.attributedText = mutableAttributedString
     }
-
+    
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        textView.attributedText = NSAttributedString(string: utterance.speechString)
+        print("finish")
+        label.attributedText = NSAttributedString(string: utterance.speechString)
     }
+    
 }
-

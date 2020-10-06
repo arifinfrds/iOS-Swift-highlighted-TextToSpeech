@@ -13,6 +13,7 @@
 		9225592B252C07D900F55815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92255929252C07D900F55815 /* Main.storyboard */; };
 		9225592D252C07DA00F55815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9225592C252C07DA00F55815 /* Assets.xcassets */; };
 		92255930252C07DA00F55815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9225592E252C07DA00F55815 /* LaunchScreen.storyboard */; };
+		92255938252C0CA800F55815 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92255937252C0CA800F55815 /* LabelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9225592C252C07DA00F55815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9225592F252C07DA00F55815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92255931252C07DA00F55815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92255937252C0CA800F55815 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9225592C252C07DA00F55815 /* Assets.xcassets */,
 				9225592E252C07DA00F55815 /* LaunchScreen.storyboard */,
 				92255931252C07DA00F55815 /* Info.plist */,
+				92255937252C0CA800F55815 /* LabelViewController.swift */,
 			);
 			path = "iOS-Swift-highlighted-TextToSpeech";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				92255928252C07D900F55815 /* ViewController.swift in Sources */,
 				92255924252C07D900F55815 /* AppDelegate.swift in Sources */,
 				92255926252C07D900F55815 /* SceneDelegate.swift in Sources */,
+				92255938252C0CA800F55815 /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
