@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		920ADCFC2549004B008C185F /* SpeechSpeedAdjusmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920ADCFB2549004B008C185F /* SpeechSpeedAdjusmentViewController.swift */; };
+		920ADD01254904C8008C185F /* LoremIpsumGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920ADD00254904C8008C185F /* LoremIpsumGenerator.swift */; };
 		92255924252C07D900F55815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92255923252C07D900F55815 /* AppDelegate.swift */; };
 		92255926252C07D900F55815 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92255925252C07D900F55815 /* SceneDelegate.swift */; };
 		92255928252C07D900F55815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92255927252C07D900F55815 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		920ADCFB2549004B008C185F /* SpeechSpeedAdjusmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSpeedAdjusmentViewController.swift; sourceTree = "<group>"; };
+		920ADD00254904C8008C185F /* LoremIpsumGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsumGenerator.swift; sourceTree = "<group>"; };
 		92255920252C07D900F55815 /* iOS-Swift-highlighted-TextToSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Swift-highlighted-TextToSpeech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92255923252C07D900F55815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92255925252C07D900F55815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,11 +65,13 @@
 				92255923252C07D900F55815 /* AppDelegate.swift */,
 				92255925252C07D900F55815 /* SceneDelegate.swift */,
 				92255927252C07D900F55815 /* ViewController.swift */,
+				92255937252C0CA800F55815 /* LabelViewController.swift */,
+				920ADCFB2549004B008C185F /* SpeechSpeedAdjusmentViewController.swift */,
 				92255929252C07D900F55815 /* Main.storyboard */,
 				9225592C252C07DA00F55815 /* Assets.xcassets */,
 				9225592E252C07DA00F55815 /* LaunchScreen.storyboard */,
 				92255931252C07DA00F55815 /* Info.plist */,
-				92255937252C0CA800F55815 /* LabelViewController.swift */,
+				920ADD00254904C8008C185F /* LoremIpsumGenerator.swift */,
 			);
 			path = "iOS-Swift-highlighted-TextToSpeech";
 			sourceTree = "<group>";
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920ADD01254904C8008C185F /* LoremIpsumGenerator.swift in Sources */,
 				92255928252C07D900F55815 /* ViewController.swift in Sources */,
 				92255924252C07D900F55815 /* AppDelegate.swift in Sources */,
 				92255926252C07D900F55815 /* SceneDelegate.swift in Sources */,
 				92255938252C0CA800F55815 /* LabelViewController.swift in Sources */,
+				920ADCFC2549004B008C185F /* SpeechSpeedAdjusmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,8 +15,6 @@ class LabelViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func speak(_ sender: AnyObject) {
