@@ -241,15 +241,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bDG-gQ-MLJ">
-                                <rect key="frame" x="14" y="140" width="386" height="31"/>
-                                <connections>
-                                    <action selector="didChangeSpeakSpeed:" destination="L0f-JN-wB2" eventType="valueChanged" id="FvG-Km-BEh"/>
-                                </connections>
+                                <rect key="frame" x="14" y="104" width="386" height="31"/>
                             </slider>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-7t-L7e">
-                                <rect key="frame" x="16" y="186" width="382" height="660"/>
+                                <rect key="frame" x="16" y="150" width="382" height="696"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -259,7 +256,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bDG-gQ-MLJ" firstAttribute="leading" secondItem="hWQ-3r-TGg" secondAttribute="leading" constant="16" id="4A2-GZ-0gJ"/>
-                            <constraint firstItem="bDG-gQ-MLJ" firstAttribute="top" secondItem="hWQ-3r-TGg" secondAttribute="top" id="8K8-h3-HYz"/>
+                            <constraint firstItem="bDG-gQ-MLJ" firstAttribute="top" secondItem="hWQ-3r-TGg" secondAttribute="top" constant="16" id="8K8-h3-HYz"/>
                             <constraint firstItem="hWQ-3r-TGg" firstAttribute="trailing" secondItem="7hw-7t-L7e" secondAttribute="trailing" constant="16" id="SMz-EV-FXr"/>
                             <constraint firstItem="7hw-7t-L7e" firstAttribute="top" secondItem="bDG-gQ-MLJ" secondAttribute="bottom" constant="16" id="Tdr-6q-x2b"/>
                             <constraint firstItem="hWQ-3r-TGg" firstAttribute="bottom" secondItem="7hw-7t-L7e" secondAttribute="bottom" constant="16" id="eF1-ja-WUA"/>
@@ -267,7 +264,7 @@
                             <constraint firstItem="7hw-7t-L7e" firstAttribute="leading" secondItem="hWQ-3r-TGg" secondAttribute="leading" constant="16" id="s1n-7N-kGI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YeG-Xq-bNh">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="YeG-Xq-bNh">
                         <barButtonItem key="rightBarButtonItem" title="Speak" id="4CT-2e-iJi">
                             <connections>
                                 <action selector="didTapSpeakButton:" destination="L0f-JN-wB2" id="Ytc-iI-cTY"/>
@@ -292,7 +289,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0B-SD-FnO">
                                 <rect key="frame" x="16" y="104" width="382" height="742"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -338,19 +335,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7h-eI-xgV">
-                                <rect key="frame" x="16" y="104" width="382" height="742"/>
+                                <rect key="frame" x="16" y="188" width="382" height="658"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OaD-x8-w1G">
+                                <rect key="frame" x="18" y="104" width="378" height="31"/>
+                                <connections>
+                                    <action selector="changeRate:" destination="Dok-fI-hhR" eventType="valueChanged" id="chS-GN-xxr"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gPo-mc-h8x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="E7h-eI-xgV" firstAttribute="leading" secondItem="gPo-mc-h8x" secondAttribute="leading" constant="16" id="9VS-pX-jyN"/>
+                            <constraint firstItem="OaD-x8-w1G" firstAttribute="leading" secondItem="gPo-mc-h8x" secondAttribute="leading" constant="20" id="JSr-rC-vZq"/>
                             <constraint firstItem="gPo-mc-h8x" firstAttribute="trailing" secondItem="E7h-eI-xgV" secondAttribute="trailing" constant="16" id="NAG-Pk-wST"/>
                             <constraint firstItem="gPo-mc-h8x" firstAttribute="bottom" secondItem="E7h-eI-xgV" secondAttribute="bottom" constant="16" id="PY0-eM-UQL"/>
-                            <constraint firstItem="E7h-eI-xgV" firstAttribute="top" secondItem="gPo-mc-h8x" secondAttribute="top" constant="16" id="gBg-ep-XlM"/>
+                            <constraint firstItem="E7h-eI-xgV" firstAttribute="top" secondItem="gPo-mc-h8x" secondAttribute="top" constant="100" id="gBg-ep-XlM"/>
+                            <constraint firstItem="gPo-mc-h8x" firstAttribute="trailing" secondItem="OaD-x8-w1G" secondAttribute="trailing" constant="20" id="n7L-od-Bnv"/>
+                            <constraint firstItem="OaD-x8-w1G" firstAttribute="top" secondItem="gPo-mc-h8x" secondAttribute="top" constant="16" id="sno-Qf-FjZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="M6s-0g-Anr">
@@ -378,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbv-bt-RMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="2118"/>
+            <point key="canvasLocation" x="1773.913043478261" y="2117.4107142857142"/>
         </scene>
     </scenes>
     <resources>

@@ -23,19 +23,38 @@ class StopAndContinueViewController: UIViewController {
         
         synthesizer.delegate = self
     }
-  
+    
+    
+    @IBAction func changeRate(_ sender: UISlider) {
+        stopSpeaking(at: .immediate)
+        startSpeakingFromRemainingText(rate: sender.value)
+    }
+    
     @IBAction func stop(_ sender: UIBarButtonItem) {
-        synthesizer.stopSpeaking(at: .word)
+        stopSpeaking(at: .word)
+    }
+    
+    private func stopSpeaking(at boundary: AVSpeechBoundary) {
+        synthesizer.stopSpeaking(at: boundary)
     }
     
     @IBAction func continueSpeak(_ sender: UIBarButtonItem) {
+        startSpeakingFromRemainingText()
+    }
+    
+    private func startSpeakingFromRemainingText(rate: Float = 0.5) {
         guard let remainingText = self.remainingText else { return }
         let newUtterance = AVSpeechUtterance(string: remainingText)
         newUtterance.voice = AVSpeechSynthesisVoice(language: "id_ID")
+        newUtterance.rate = rate
         synthesizer.speak(newUtterance)
     }
     
     @IBAction func speak(_ sender: UIBarButtonItem) {
+        startSpeakingFromStart()
+    }
+    
+    private func startSpeakingFromStart() {
         let initialUtterance = AVSpeechUtterance(string: label.text!)
         initialUtterance.voice = AVSpeechSynthesisVoice(language: "id_ID")
         synthesizer.speak(initialUtterance)
