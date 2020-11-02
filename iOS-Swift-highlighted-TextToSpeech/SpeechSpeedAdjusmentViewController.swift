@@ -34,6 +34,11 @@ class SpeechSpeedAdjusmentViewController: UIViewController {
     @IBAction func didChangeSpeakSpeed(_ sender: UISlider) {
         if synthesizer.isSpeaking {
             synthesizer.stopSpeaking(at: .immediate)
+            // ambil range ketika dia stop
+            // ambil indx kata ketika dia stop
+            // lempar sbg start index ketika dia speak lagi.
+            
+            // self.currentRange
         }
         
         if isStillHaveTextThatNeedsToBeSpoken() {
@@ -83,14 +88,14 @@ extension SpeechSpeedAdjusmentViewController: AVSpeechSynthesizerDelegate {
         )
         textView.attributedText = mutableAttributedString
         
-        // debugPrint(characterRange.toRange())
         self.currentRange = characterRange
+        
+        let remainingText = utterance.speechString.dropFirst(characterRange.location)
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         textView.attributedText = NSAttributedString(string: utterance.speechString)
         // self.currentRange = NSRange(location: 0, length: 0)
-
     }
     
 }
